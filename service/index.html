@@ -25,7 +25,7 @@
     <div class="container-fluid p-0">
 
       <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Xi</span> Tan</a>
-      
+
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,16 +50,6 @@
           </li>
 
 
-
-          <!-- 
-              <li class="nav-item ">
-                  <a class="nav-link" href="/projects/">
-                    Projects
-                    
-                  </a>
-              </li>
-          	-->
-
           <li class="nav-item ">
             <a class="nav-link" href="/publications/">
               Publications
@@ -77,16 +67,12 @@
           </li>
 
 
-          <li class="nav-item navbar-active font-weight-bold">
-            <a class="nav-link" href="/service/">
-              Service
-
-              <span class="sr-only">(current)</span>
+          <li class="nav-item ">
+            <a class="nav-link" href="/projects/">
+              Projects
 
             </a>
           </li>
-
-
 
 
         </ul>
@@ -528,30 +514,9 @@
   <script src="/assets/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
-  <!-- Script Used for Randomizing the Projects Order -->
-  <!-- <script type="text/javascript">
-    $.fn.shuffleChildren = function() {
-      $.each(this.get(), function(index, el) {
-        var $el = $(el);
-        var $find = $el.children();
-
-        $find.sort(function() {
-          return 0.5 - Math.random();
-        });
-
-        $el.empty();
-        $find.appendTo($el);
-      });
-    };
-    $("#projects").shuffleChildren();
-  </script> -->
-
   <!-- Project Cards Layout -->
   <script type="text/javascript">
     var $grid = $('#projects');
-
-    // $grid.masonry({ percentPosition: true });
-    // $grid.masonry('layout');
 
     // Trigger after images load.
     $grid.imagesLoaded().progress(function () {
